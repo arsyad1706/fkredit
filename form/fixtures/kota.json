@@ -1,0 +1,226 @@
+[
+    {
+        "model": "form.Kota",
+        "pk": 1,
+        "fields": {
+            "kota": "SURABAYA"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 2,
+        "fields": {
+            "kota": "PAMEKASAN"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 3,
+        "fields": {
+            "kota": "BANGKALAN"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 4,
+        "fields": {
+            "kota": "BANYUWANGI"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 5,
+        "fields": {
+            "kota": "LUMAJANG"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 6,
+        "fields": {
+            "kota": "PROBOLINGGO"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 7,
+        "fields": {
+            "kota": "PASURUAN"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 8,
+        "fields": {
+            "kota": "MALANG"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 9,
+        "fields": {
+            "kota": "NGAWI"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 10,
+        "fields": {
+            "kota": "BLITAR"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 11,
+        "fields": {
+            "kota": "KEDIRI"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 12,
+        "fields": {
+            "kota": "MOJOKERTO"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 13,
+        "fields": {
+            "kota": "JOMBANG"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 14,
+        "fields": {
+            "kota": "NGANJUK"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 15,
+        "fields": {
+            "kota": "MADIUN"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 16,
+        "fields": {
+            "kota": "TULUNGAGUNG"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 17,
+        "fields": {
+            "kota": "TRENGGALEK"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 18,
+        "fields": {
+            "kota": "PONOROGO"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 19,
+        "fields": {
+            "kota": "GRESIK"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 20,
+        "fields": {
+            "kota": "LAMONGAN"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 21,
+        "fields": {
+            "kota": "MAGETAN"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 22,
+        "fields": {
+            "kota": "PACITAN"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 23,
+        "fields": {
+            "kota": "SIDOARJO"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 24,
+        "fields": {
+            "kota": "JEMBER"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 25,
+        "fields": {
+            "kota": "TUBAN"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 26,
+        "fields": {
+            "kota": "BATU"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 27,
+        "fields": {
+            "kota": "SITUBONDO"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 28,
+        "fields": {
+            "kota": "BOJONEGORO"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 29,
+        "fields": {
+            "kota": "BONDOWOSO"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 30,
+        "fields": {
+            "kota": "SUMENEP"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 31,
+        "fields": {
+            "kota": "KEPANJEN"
+        }
+    },
+    {
+        "model": "form.Kota",
+        "pk": 32,
+        "fields": {
+            "kota": "SAMPANG"
+        }
+    }
+]
