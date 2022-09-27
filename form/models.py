@@ -14,6 +14,7 @@ class Form(models.Model):
     id = models.AutoField(primary_key=True)
     pinjaman = models.IntegerField()
     tenor = models.CharField(max_length=1)
+    angsuran = models.IntegerField()
     nama = models.CharField(max_length=60)
     telp = models.CharField(max_length=13)
     email = models.EmailField(max_length=254)

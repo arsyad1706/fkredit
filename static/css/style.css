@@ -40,13 +40,6 @@ body{
     font-weight: 600;
     margin-top: 5px;
 }
-/* .amount{
-    background-color: var(--first-color-light);
-    border-radius: 8px;
-} */
-.inner{
-    padding: 8px 19px;
-}
 .logo-dark{
     position: relative;
 }
