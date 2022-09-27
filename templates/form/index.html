@@ -11,9 +11,13 @@
     <link rel="stylesheet" href="{% static 'css/style.css'' %}">
 </head>
 <body>
-    <div class="container d-flex justify-content-center main">
-        <!-- <img src="{% static 'img/logo.png' %}" alt="" class="logo-dark" width="200"> -->
-        <div class="card">
+    <div class="container">
+        <div style="display:flex; margin-bottom: 40px; align-items: center; justify-content: center;">
+            <img src="{% static 'img/logo.png' %}" alt="" class="logo-dark" width="450  ">
+            <br>
+            <br>
+        </div>
+        <div class="card" style="margin: 0 auto; float: none;">
             <!-- <div class="d-flex justify-content-left px-3 pt-3">
                 <img src="{% static 'img/logo-dark.png' %}" alt="" class="logo-dark" width="200">
             </div> -->
@@ -83,12 +87,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex align-items-center justify-content-between px-3 py-4">
-                    <div>
-                        <button type="reset" class="btn cancel">Cancel</button>
+                <div class="d-flex px-3 py-4">
+                    <div class="mr-auto p-2">  
+                        <label for="syarat" class="syarattxt">
+                            <em>*Syarat dan Ketentuan berlaku</em>
+                        </label>
                     </div>
-                    <div>
-                        <button type="submit" class="btn payment">Submit</button>
+                    <div class="p-1">
+                        <a href="https://bankumkm.id">
+                            <button type="button" class="btn cancel">Cancel</button>
+                        </a>
+                    </div>
+                    <div class="p-1">
+                        <button type="submit" class="btn payment" data-toggle="modal">Submit</button>
                     </div>
                 </div>
             </form>
