@@ -3,6 +3,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='form'),
-    path('/addform', views.addform, name="addform"),
-    path('/success', views.modal, name="modal"),
+    path('addform', views.addform, name="addform"),
+    path('success', views.modal, name="modal"),
 ]

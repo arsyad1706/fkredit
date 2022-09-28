@@ -30,19 +30,19 @@
                     <label for="card-number">
                         <span class="labeltxt">Pinjaman</span>
                     </label>
-                    <input type="text" id="pinjaman" class="form-control inputtxt" placeholder="Rp 10.000.000">
+                    <input type="text" id="pinjaman" class="form-control inputtxt" placeholder="Rp 10.000.000" required>
                     <input type="hidden" name="pinjaman" id="hpinjaman">
                 </div>
                 <div class="justify-content-between px-3 pt-3">
                     <div class="row">
                         <div class="col-md-6">
                             <label for="tenor" class="labeltxt">Tenor</label>
-                            <select class="form-control select" name="tenor" id="tenor" onchange="hitungangsuran()">
-                                <option selected>--Pilih Tenor--</option>
-                                <option value="12">1 Tahun</option>
-                                <option value="24">2 Tahun</option>
-                                <option value="36">3 Tahun</option>
-                                <option value="48">4 Tahun</option>
+                            <select class="form-control select" name="tenor" id="tenor" onchange="hitungangsuran()" required>
+                                <option disabled selected hidden value="">--Pilih Tenor--</option>
+                                <option value="1">1 Tahun</option>
+                                <option value="2">2 Tahun</option>
+                                <option value="3">3 Tahun</option>
+                                <option value="4">4 Tahun</option>
                             </select>
                         </div>
                         <div class="col-md-6">
@@ -56,18 +56,18 @@
                     <label for="card-number">
                         <span class="labeltxt">Nama Lengkap</span>
                     </label>
-                    <input type="text" name="nama" class="form-control inputtxt" placeholder="John Doe">
+                    <input type="text" name="nama" class="form-control inputtxt" placeholder="John Doe" required>
                 </div>
                 <div class="justify-content-between px-3 pt-3">
                     <div class="row">
                         <div class="col-md-6">
                             <label for="alamat" class="labeltxt">Alamat</label>
-                            <input type="text" name="alamat" class="form-control inputtxt" placeholder="Jl. CIliwung No.11">
+                            <input type="text" name="alamat" class="form-control inputtxt" placeholder="Jl. CIliwung No.11" required>
                         </div>
                         <div class="col-md-6">
                             <label for="Kota" class="labeltxt">Kota</label>
-                            <select name="kota" id="kota" class="form-control select">
-                                <option selected>--Pilih Kota--</option>
+                            <select name="kota" id="kota" class="form-control select" required>
+                                <option disabled selected hidden value="">--Pilih Kota--</option>
                                 {% for k in kota %}
                                   <option value="{{k.id}}">{{k.kota}}</option>
                                 {% endfor %}
@@ -79,11 +79,11 @@
                     <div class="row">
                         <div class="col-md-6">
                             <label for="email" class="labeltxt">Email</label>
-                            <input type="email" class="form-control inputtxt" placeholder="johndoe@mail.com" name="email">
+                            <input type="email" class="form-control inputtxt" placeholder="johndoe@mail.com" name="email" required>
                         </div>
                         <div class="col-md-6">
                             <label for="telp" class="labeltxt">Telp / Hp</label>
-                            <input type="number" name="telp" class="form-control inputtxt telp" placeholder="(999)-999999">
+                            <input type="number" name="telp" class="form-control inputtxt telp" placeholder="(999)-999999" required>
                         </div>
                     </div>
                 </div>
@@ -136,7 +136,7 @@
 
         function hitungangsuran(){
             var p = $('#pinjaman').val().replace(/\D/g,'');
-            var t = $('#tenor').val();
+            var t = $('#tenor').val()*12;
             var pokok = p / t;
             var bunga = p * (0.83 / 100);
             var angsuran = pokok + bunga;
