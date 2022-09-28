@@ -26,7 +26,11 @@ SECRET_KEY = 'django-insecure-iwu12)u()72p^mqjorybhh*lyg-s6wxv7!k9w+cd*#+qz9a+r@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+# Security Server
+#DEBUG = False
+
+#ALLOWED_HOSTS = ['pinjaman.bankumkm.id']
 
 
 # Application definition
@@ -51,12 +55,15 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# SECURE_SSL_REDIRECT = True
+
 ROOT_URLCONF = 'core.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [BASE_DIR/'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -84,6 +91,15 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '3306',
     }
+    # DB Server
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',
+    #     'NAME': 'fkredit',
+    #     'USER': 'bankumkm',
+    #     'PASSWORD': 'J4t1m1!!',
+    #     'HOST': '192.168.100.7',
+    #     'PORT': '3306',
+    # }
 }
 
 
