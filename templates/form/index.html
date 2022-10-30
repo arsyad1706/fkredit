@@ -142,8 +142,8 @@
             var pokok = p / t;
             var bunga = p * (0.83 / 100);
             var angsuran = pokok + bunga;
-            if ($('#tenor').val() == 0 || $('pinjaman').val() == null) {
-                $('#ansuran').val('Rp '+parseFloat(Math.round(angsuran)).toLocaleString('en'))
+            if ($('#tenor').val() == 0) {
+                $('#ansuran').val('Rp 000.000')
             } else {
                 $('#hangsuran').val(Math.round(angsuran))
                 $('#angsuran').val('Rp '+parseFloat(Math.round(angsuran)).toLocaleString('en'));
