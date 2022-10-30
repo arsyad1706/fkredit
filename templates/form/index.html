@@ -30,7 +30,7 @@
                     <label for="card-number">
                         <span class="labeltxt">Pinjaman</span>
                     </label>
-                    <input type="text" id="pinjaman" class="form-control inputtxt" placeholder="Rp 10.000.000" onchange="hitungangsuran()" required>
+                    <input type="text" id="pinjaman" class="form-control inputtxt" placeholder="Rp 10.000.000" onkeyup="hitungangsuran()" required>
                     <input type="hidden" name="pinjaman" id="hpinjaman">
                 </div>
                 <div class="justify-content-between px-3 pt-3">
@@ -142,8 +142,8 @@
             var pokok = p / t;
             var bunga = p * (0.83 / 100);
             var angsuran = pokok + bunga;
-            if ($('#tenor').val() == 0) {
-                $('#ansuran').val('Rp 000.000')
+            if ($('#tenor').val() == 0 || $('#pinjaman').val() == '') {
+                $('#ansuran').val('Rp 0')
             } else {
                 $('#hangsuran').val(Math.round(angsuran))
                 $('#angsuran').val('Rp '+parseFloat(Math.round(angsuran)).toLocaleString('en'));
