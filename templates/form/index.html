@@ -144,7 +144,7 @@
             var angsuran = pokok + bunga;
             if ($('#tenor').val() == 0) {
                 $('#hangsuran').val('0')
-                $('#angsuran').val('Rp 0')
+                $('#angsuran').val('Rp 000.000')
             } else {
                 $('#hangsuran').val(Math.round(angsuran))
                 $('#angsuran').val('Rp '+parseFloat(Math.round(angsuran)).toLocaleString('en'));
