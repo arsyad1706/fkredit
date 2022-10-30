@@ -137,6 +137,7 @@
 
         function hitungangsuran(){
             var p = $('#pinjaman').val().replace(/\D/g,'');
+            console.log(p);
             var t = $('#tenor').val()*12;
             var pokok = p / t;
             var bunga = p * (0.83 / 100);
