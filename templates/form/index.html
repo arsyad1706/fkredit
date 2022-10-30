@@ -30,7 +30,7 @@
                     <label for="card-number">
                         <span class="labeltxt">Pinjaman</span>
                     </label>
-                    <input type="text" id="pinjaman" class="form-control inputtxt" placeholder="Rp 10.000.000" onchange="hitungangsuran()" required>
+                    <input type="text" id="pinjaman" class="form-control inputtxt" placeholder="Rp 10.000.000" required>
                     <input type="hidden" name="pinjaman" id="hpinjaman">
                 </div>
                 <div class="justify-content-between px-3 pt-3">
@@ -115,6 +115,7 @@
         rupiah.addEventListener('keyup', function(e){
             rupiah.value = formatrupiah(this.value, 'Rp ');
             $('#hpinjaman').val($(this).val().replace(/\D/g,''));
+            hitungangsuran()
         });
 
         function formatrupiah(angka, prefix){
